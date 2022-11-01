@@ -1,0 +1,238 @@
+:root{
+    --primary-title-color:#212121;
+    --accent-color:#2196F3;
+    --primary-text-color:#757575;
+    --white-color:#FFFFFF;
+    --black-color: #000000;
+    --backgroud-color:#2F303A;
+    --hero-hover-color:#00008b;
+    --background-button-color:#F5F4FA;
+}
+
+ul{
+    list-style: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+
+}
+
+/*HEADER*/
+.header > ul{
+    width: 1600px;
+    background:var(--white-color)
+}
+.header-logo{
+    color:var(--accent-color);
+    font-weight:700;
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: Raleway;
+}
+.header-list-link{
+    display:flex; 
+}
+.header-link{
+    color:var(--primary-title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 57px;
+}
+.header-link:hover,
+.header-link:focus{
+    color:var(--accent-color)
+}
+.current{
+    color:var(--accent-color)
+
+}
+.header-list-contact{
+    display:flex;
+    justify-content: right;  
+}
+.header-item-contact-link{
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+}
+
+.header-item-contact-link:hover,
+.header-item-contact-link:focus{
+    color:var(--accent-color)
+}
+
+/*Hero*/
+.hero-section{
+    background-color:var(--backgroud-color);
+    width: 1600px;
+
+}
+
+.hero-title{
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color:var(--white-color);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: var(--accent-color);
+    border-radius: 4px;
+}
+.hero-button:hover,
+.hero-button:focus{
+    background-color:var(--hero-hover-color);
+}
+
+/*FEATURES*/
+
+.features-item-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color:var(--primary-title-color);
+}
+.features-item-text{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/*JOB*/
+
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--primary-title-color);
+    text-align: center;
+}
+.job-list{
+    display: flex;
+}
+
+/*TEAM*/
+
+.team-list{
+    display: flex;
+}
+.team-item-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--primary-title-color);
+}
+.team-item-description{
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+/*PORTFOLIO*/
+
+.portfolio-filters-list{
+    display: flex;
+    justify-content: center;
+}
+.navigation-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color:var(--black-color);
+    cursor: pointer;
+    background: var(--background-button-color);   
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+    border-style: none;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.navigation-button:hover,
+.navigation-button:focus{
+    background-color: var(--accent-color);
+    color:var(--white-color)
+}
+
+.portfolio-list-header{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-title-color)
+}
+
+.portfolio-list-text{
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color:var(--backgroud-color);
+    width: 1600px;
+}
+.footer-logo{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: Raleway;
+    color:  var(--accent-color);
+    line-height: 1.19;
+}
+.footer-location{
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--white-color);
+}
+.footer-location:hover,
+.footer-location:hover{
+    color: var(--accent-color);
+}
+.footer-item-link{
+    font-size: 14px;
+    color: var(--white-color);
+    opacity: .6;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+}
+.footer-item-link:hover,
+.footer-item-link:focus{
+    color: var(--accent-color);
+}
