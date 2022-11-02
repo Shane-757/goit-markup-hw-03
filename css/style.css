@@ -7,6 +7,7 @@
     --backgroud-color:#2F303A;
     --hero-hover-color:#00008b;
     --background-button-color:#F5F4FA;
+    --portfolio-background-color: #E5E5E5;
 }
 
 ul{
@@ -17,7 +18,8 @@ ul{
 *::after {
   box-sizing: border-box;
 }
-
+*
+ { margin: 0; padding: 0; }
 
 a{
     text-decoration: none;
@@ -32,11 +34,14 @@ body{
     letter-spacing: 0.03em;
 
 }
+.container{
+    width: 1200px;
+}
 
 /*HEADER*/
-.header > ul{
-    width: 1600px;
-    background:var(--white-color)
+.header{
+    background:var(--white-color);
+    border: 1px solid #ECECEC;
 }
 .header-logo{
     color:var(--accent-color);
@@ -85,8 +90,11 @@ body{
 /*Hero*/
 .hero-section{
     background-color:var(--backgroud-color);
-    width: 1600px;
-
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-title{
@@ -97,6 +105,7 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: var(--white-color);
+    
 }
 .hero-button{
     font-weight: 700;
@@ -110,6 +119,7 @@ body{
     background: var(--accent-color);
     box-shadow: var(--accent-color);
     border-radius: 4px;
+    
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -117,6 +127,11 @@ body{
 }
 
 /*FEATURES*/
+.features-list{
+    display: flex;
+    justify-content: center;   
+    
+}
 
 .features-item-title{
     font-weight: 700;
@@ -141,9 +156,12 @@ body{
 .job-list{
     display: flex;
 }
+.item-img{margin: 30px;}
 
 /*TEAM*/
-
+.team{
+    background: #F5F4FA;
+}
 .team-list{
     display: flex;
 }
@@ -160,6 +178,7 @@ body{
 
 /*PORTFOLIO*/
 
+
 .portfolio-filters-list{
     display: flex;
     justify-content: center;
@@ -175,12 +194,26 @@ body{
     width: 128px;
     height: 38px;
     left: 576px;
-    top: 174px;
+    margin-top: 174px;
     border-style: none;
     border-radius: 4px;
     margin-right: 8px;
 }
 
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.portfolio-list-item{
+    margin: 30px;
+    width: 25%;
+    box-sizing: border-box; 
+    border: 1px solid #E5E5E5;
+    
+    
+}
 .navigation-button:hover,
 .navigation-button:focus{
     background-color: var(--accent-color);
@@ -204,7 +237,7 @@ body{
 
 .footer{
     background-color:var(--backgroud-color);
-    width: 1600px;
+    
 }
 .footer-logo{
     font-weight: 700;
