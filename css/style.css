@@ -14,6 +14,7 @@ p, h1, h2, h3, h4, h5, h6{
     margin-top: 0;
     margin-bottom: 0;
 }
+
 ul{
     list-style: none;
     margin-top: 0;
@@ -58,6 +59,7 @@ img{
 }
 
 /*HEADER*/
+
 .header{
     background:var(--white-color);
     border-bottom: 1px solid #ECECEC;
@@ -118,7 +120,6 @@ img{
     margin-right: 50px;
 }
 
-
 .header-item-contact-link{
     color:var(--primary-text-color);
     font-weight: 500;
@@ -149,7 +150,6 @@ img{
     align-items: center;
     flex-direction: column;
 }
-
 
 .hero-title{
     text-align: center;
@@ -201,7 +201,6 @@ img{
     overflow: hidden;
 }
 
-
 .features-list{
     display: flex;
     flex-wrap: wrap;      
@@ -251,8 +250,6 @@ img{
     margin-right: 30px;
 }
 
-
-
 /*TEAM*/
 
 .team{
@@ -260,7 +257,6 @@ img{
     padding-top:94px;
     padding-bottom: 94px;
 }
-
 
 .team-title{
     font-weight: 700;
@@ -281,6 +277,7 @@ img{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
 .team-item:not(:last-child){
     margin-right:30px;
 }
@@ -307,11 +304,10 @@ img{
 
 /*PORTFOLIO*/
 
-.portfolio-filters-list{
-    display: flex;
-    justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
+.navigation-button:hover,
+.navigation-button:focus{
+    background-color: var(--accent-color);
+    color:var(--white-color)
 }
 
 .navigation-button{
@@ -331,32 +327,47 @@ img{
     margin-right: 8px;
 }
 
+.portfolio-filters-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
+    
 }
 
 
 .portfolio-list-item{
-    margin: 30px;
+    margin:30px;
     width: 25%;
     box-sizing: border-box; 
-    border-bottom: 1px solid #E5E5E5;  
+    
 }
 
-.navigation-button:hover,
-.navigation-button:focus{
-    background-color: var(--accent-color);
-    color:var(--white-color)
+
+.portfolio-description{
+    border-bottom: 1px solid #E5E5E5;  
+    border-left:1px solid #E5E5E5; 
+    border-right: 1px solid #E5E5E5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
+
 
 .portfolio-list-header{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--primary-title-color)
+    color: var(--primary-title-color);
+    
 }
 
 .portfolio-list-text{
