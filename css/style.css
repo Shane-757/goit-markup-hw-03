@@ -303,6 +303,9 @@ img{
 }
 
 /*PORTFOLIO*/
+.portfolio{
+    padding-bottom: 94px;
+}
 
 .navigation-button:hover,
 .navigation-button:focus{
@@ -325,6 +328,7 @@ img{
     border-style: none;
     border-radius: 4px;
     margin-right: 8px;
+    
 }
 
 .portfolio-filters-list{
@@ -335,17 +339,17 @@ img{
 }
 
 .portfolio-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
+     display: flex;
+     flex-wrap: wrap;
     
 }
 
 
 .portfolio-list-item{
-    margin:30px;
-    width: 25%;
+    padding-right:30px;
+    padding-bottom: 30px;
     box-sizing: border-box; 
+    width: 370px;
     
 }
 
