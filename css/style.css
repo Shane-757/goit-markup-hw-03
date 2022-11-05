@@ -318,7 +318,7 @@ img{
     color:var(--black-color);
     cursor: pointer;
     background: var(--background-button-color);   
-    padding-top: 6px 26px;
+    padding: 6px 26px;
     border-style: none;
     border-radius: 4px;
     
